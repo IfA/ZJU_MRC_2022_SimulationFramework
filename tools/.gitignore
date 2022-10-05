@@ -1,0 +1,6 @@
+*~
+*.mexglx
+*.mexa64
+*.mexw32
+*.mexw64
+*.mexmaci64

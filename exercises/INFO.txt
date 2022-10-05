@@ -1,0 +1,3 @@
+Experimentdateien u.s.w., die nur für die Übungen relevant sind.
+Sowohl Lösungen als auch Dateien, welche noch von den Studenten auszufüllen sind. 
+Dabei sollten die Lösungen unter dem "normalen" Dateinamen abgespeichert werden (*.m) und die korrespondierenden unvollständigen Dateien z.B. mit *.incomplete.m gekennzeichnet werden.

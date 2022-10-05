@@ -1,0 +1,2 @@
+Binärdateien, die an mehreren Stellen erwendet werden bzw. die nicht spezifisch für eine einzige Experimentdatei sind.
+Z.B. Karten
