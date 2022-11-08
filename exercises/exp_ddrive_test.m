@@ -13,8 +13,8 @@ function exp = exp_ddrive_test(varargin)
     
     % Instantiate the robot
     exp.robot.platform = model_platform2d_ddrive([2 0.75 90*pi/180]);
-    %exp.robot.platform.wheelRadius = [0.030 0.0303];    
-    %exp.robot.platform.wheelDistance = 0.255;
+%     exp.robot.platform.wheelRadius = [0.030 0.0303];    
+%     exp.robot.platform.wheelDistance = 0.255;
     exp.robot.radius = 0.14;
     exp.robot.color = [0 0 1];
     exp.robot.wheelRadius = 0.03;

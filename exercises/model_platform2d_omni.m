@@ -23,8 +23,9 @@ function model = model_platform2d_omni(varargin)
             phi = X(3);
             
             % Transformation from body-fixed velocities to inertial velocities
-            % TODO
-            J = ...
+            J = [cos(phi), -sin(phi), 0; ...
+                 sin(phi),  cos(phi), 0; ...
+                        0,         0, 1];
 
             % see MR01 -> compute state derivatives
             dX = J * u;

@@ -31,8 +31,9 @@ function model = model_platform2d_ddrive(varargin)
             phi = X(3);
             
             % Transformation from body-fixed velocities to inertial velocities
-            % TODO
-            J = ...
+            J = [cos(phi), -sin(phi), 0; ...
+                 sin(phi),  cos(phi), 0; ...
+                        0,         0, 1];
             
             % Transformation of the inputs into (generalized) body-fixed velocities
             if numel(block.wheelRadius) > 1
@@ -42,9 +43,9 @@ function model = model_platform2d_ddrive(varargin)
                 R_rightWheel = block.wheelRadius(1);
                 R_leftWheel = block.wheelRadius(1);
             end
-            
-            % TODO
-            V = ...
+            V = [R_rightWheel / 2, R_leftWheel / 2; ...
+                                0,               0; ...
+                 R_rightWheel / block.wheelDistance, -R_leftWheel / block.wheelDistance];
             
             % see MR01 -> compute state derivatives
             dX = J * V * u(:);
