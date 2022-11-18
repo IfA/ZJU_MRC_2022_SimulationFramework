@@ -70,7 +70,7 @@ function exp = exp_ekf_ddrive()
     exp.robot.localization.useExactDiscretization = false;
     exp.robot.localization.useCartesianSensor = false;
     exp.robot.localization.useRange = true;
-    exp.robot.localization.useBearing = true;
+    exp.robot.localization.useBearing = false;
     
     % (variant 2: analytic prediction, exact discretization, followed by
     % linearization, range+bearing measurements)
